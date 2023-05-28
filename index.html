@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juegos PS3 HEN</title>
+
+    <style>
+        body {
+            background-color: rgb(0, 0, 0); 
+            align-items: center;
+        }
+
+        h1 {
+            color: red;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .gallery-item {
+            margin: 10px;
+            flex: 1 0 250px; /* Establece un ancho mínimo y máximo para los elementos de la galería */
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto; /* Ajusta automáticamente la altura para mantener la proporción de aspecto de la imagen */
+            object-fit: contain; /* Muestra la imagen completa sin recortarla */
+        }
+
+        @media (max-width: 600px) {
+            /* Aplica estilos diferentes cuando el ancho de la pantalla es igual o menor a 600px */
+            .gallery-item {
+                flex-basis: 100%; /* Ocupa todo el ancho disponible */
+            }
+        }
+
+        @media (min-width: 601px) {
+            /* Aplica estilos diferentes cuando el ancho de la pantalla es mayor a 600px */
+            .gallery {
+                flex-wrap: wrap;
+            }
+
+            .gallery-item {
+                flex-basis: calc(33.33% - 20px); /* Calcula el ancho de cada elemento para que tres queden en una fila */
+            }
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <img src="image.jpg">       
+        <h1>
+            Juegos PS3 formato PKG y NO HAN
+        </h1>
+    </center>
+
+    <br>
+    <br>
+    <br>
+
+    <div class="gallery">
+        <div class="gallery-item">
+           <p style="color: white;">RED DEAD REDEMPTION GOTY </p> <img src="red.jpg" alt="Imagen 1">
+        </div>
+        <div class="gallery-item">
+         <p style="color: white;">The Last of US </p><img src="The Last of.jpg" alt="Imagen 2">
+        </div>
+        <div class="gallery-item">
+         <p style="color: white;">Uncharted 2: Among Thieves</p><img src="Uncharted 2.jpg" alt="Imagen 3">
+        </div>
+        <div class="gallery-item">
+        <p style="color: white;">Metal Gear Solid 4 Guns of the Patriots</p><img src="Metal Gear Solid 4 Guns of the Patriots.jpg" alt="Imagen 1">
+        </div>
+        <div class="gallery-item">
+         <p style="color: white;">Grand Theft Auto V</p><img src="gtav.jpg" alt="Imagen 2">
+        </div>
+        <div class="gallery-item">
+        <p style="color: white;">Grand Theft Auto IV</p><img src="gtaiv.png" alt="Imagen 3">
+        </div>
+    </div>
+</body>
+</html>
